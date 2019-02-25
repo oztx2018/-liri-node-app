@@ -42,7 +42,6 @@ var spotifyFinder = function (songName) {
       }
 });
 }  
-
 var findMovie = function(movie) {
     if (movie === undefined) {
       movie = "Mr Nobody";
@@ -76,9 +75,6 @@ var findMovie = function(movie) {
         var cmds = data.toString().split(',');
     });
 }
-
-
-
 
 // This is for user input method;
 var userInput = function (caseData, functionData) {
