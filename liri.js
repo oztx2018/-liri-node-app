@@ -1,11 +1,13 @@
 //read & set any environment variables with the dotenv package
 require("dotenv").config();
 
+
 // These variables will use npm packages that we will need
 var Spotify = require("node-spotify-api");
 var request = require("request");
 var moment = require("moment");
 var axios = require("axios");
+
 
 // This imports modules from key.js
 var keys = require('./keys.js');
@@ -42,6 +44,7 @@ var spotifyFinder = function (songName) {
       }
 });
 }  
+
 var findMovie = function(movie) {
     if (movie === undefined) {
       movie = "Mr Nobody";
